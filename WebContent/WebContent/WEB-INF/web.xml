@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+
+	<!-- ログイン画面表示 -->
+	<servlet>
+		<servlet-name>Login</servlet-name>
+		<servlet-class>controller.Login</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Login</servlet-name>
+		<url-pattern>/Login</url-pattern>
+	</servlet-mapping>
+
+	<!-- ログイン処理 -->
+	<servlet>
+		<servlet-name>ExecuteLogin</servlet-name>
+		<servlet-class>controller.ExecuteLogin</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ExecuteLogin</servlet-name>
+		<url-pattern>/ExecuteLogin</url-pattern>
+	</servlet-mapping>
+
+	<!-- ログアウト処理 -->
+	<servlet>
+		<servlet-name>ExecuteLogout</servlet-name>
+		<servlet-class>controller.ExecuteLogout</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ExecuteLogout</servlet-name>
+		<url-pattern>/ExecuteLogout</url-pattern>
+	</servlet-mapping>
+
+	<!-- メイン画面（メッセージ一覧・投稿） -->
+	<servlet>
+		<servlet-name>LetterMain</servlet-name>
+		<servlet-class>controller.LetterMain</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LetterMain</servlet-name>
+		<url-pattern>/LetterMain</url-pattern>
+	</servlet-mapping>
+
+	<!-- メッセージ投稿処理 -->
+	<servlet>
+		<servlet-name>PostLetter</servlet-name>
+		<servlet-class>controller.PostLetter</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>PostLetter</servlet-name>
+		<url-pattern>/PostLetter</url-pattern>
+	</servlet-mapping>
+
+	<!-- 送信済みメッセージ削除処理 -->
+	<servlet>
+		<servlet-name>DeleteSentLetter</servlet-name>
+		<servlet-class>controller.DeleteSentLetter</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DeleteSentLetter</servlet-name>
+		<url-pattern>/DeleteSentLetter</url-pattern>
+	</servlet-mapping>
+
+	<!-- メッセージ編集画面表示 -->
+	<servlet>
+		<servlet-name>EditLetter</servlet-name>
+		<servlet-class>controller.EditLetter</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>EditLetter</servlet-name>
+		<url-pattern>/EditLetter</url-pattern>
+	</servlet-mapping>
+
+	<!-- メッセージ更新処理 -->
+	<servlet>
+		<servlet-name>UpdateLetter</servlet-name>
+		<servlet-class>controller.UpdateLetter</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UpdateLetter</servlet-name>
+		<url-pattern>/UpdateLetter</url-pattern>
+	</servlet-mapping>
+
+	<!-- メッセージ作成画面表示 -->
+	<servlet>
+		<servlet-name>ComposeLetter</servlet-name>
+		<servlet-class>controller.ComposeLetter</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ComposeLetter</servlet-name>
+		<url-pattern>/ComposeLetter</url-pattern>
+	</servlet-mapping>
+
+	<!-- 送信済み画面表示 -->
+	<servlet>
+		<servlet-name>SentLetters</servlet-name>
+		<servlet-class>controller.SentLetters</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SentLetters</servlet-name>
+		<url-pattern>/SentLetters</url-pattern>
+	</servlet-mapping>
+
+</web-app>
